@@ -560,4 +560,121 @@ background: linear-gradient(90deg, rgba(20,20,20,1) 23%, rgba(171,4,8,1) 50%, rg
         .box img {
             max-width: 100%; /* Largura máxima da imagem */
             height: auto; /* Altura automática para manter a proporção */
-            border-radius: 8px; /* Borda arredondada para a imagem */
+            border-radius: 8px; /* Borda arredondada para a imagem *//* ... (seu CSS atual permanece até aqui) ... */
+
+/* Ajustes específicos para celular */
+@media (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+
+  header .fa-bars {
+    display: block;
+  }
+
+  header .navbar {
+    position: fixed;
+    top: -100rem;
+    left: 0;
+    width: 100%;
+    background: #171717;
+    border-radius: 1rem;
+    opacity: 0;
+    transition: .2s linear;
+  }
+
+  header .navbar ul {
+    flex-flow: column;
+    padding: 2rem 0;
+  }
+
+  header .navbar ul li {
+    margin: 1rem 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  header .navbar ul li a {
+    font-size: 3rem;
+    display: block;
+  }
+
+  header .nav-toggle {
+    top: 5.5rem;
+    opacity: 1;
+  }
+
+  .home .content {
+    padding-top: 15rem;
+  }
+
+  .home .content p {
+    padding: 1.5rem 2rem;
+  }
+
+  .product .box-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product .box-container .box {
+    width: 90%;
+    height: auto;
+    margin: 1rem 0;
+  }
+
+  .about .row {
+    flex-direction: column-reverse;
+  }
+
+  .about .row .image img {
+    width: 90vw;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+
+  .about .row .content {
+    padding: 0 2.5rem;
+  }
+
+  .conteudo {
+    display: block;
+    padding: 1rem;
+    overflow: hidden;
+  }
+
+  .imagem {
+    float: none;
+    display: block;
+    margin: 0 auto 1rem auto;
+    max-width: 90%;
+    height: auto;
+  }
+
+  .course .box-container {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact .row {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .contact .row .form-container {
+    width: 100%;
+    padding: 0;
+  }
+
+  .footer .icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer .icons a {
+    margin: 0.5rem;
+  }
+}
